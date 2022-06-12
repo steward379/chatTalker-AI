@@ -275,7 +275,7 @@ body .card, body .solution .solution-block .solution-feature, .solution .solutio
 
 .ratings .swiper-wrapper2 {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -283,10 +283,9 @@ body .card, body .solution .solution-block .solution-feature, .solution .solutio
 .ratings .swiper-wrapper2 .swiper-slide2 {
   flex: 1;
   margin: 8px 24px;
-  margin: 0;
   list-style: none;
   padding: 0 32px 32px 32px;
-  height: 320px;
+  height: 100%;
 }
 
 .ratings .swiper-wrapper2 .rating-profile {
