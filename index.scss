@@ -152,83 +152,38 @@ body {
     }
 }
 .character {
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-top: $long-margin;
+    text-align: center;
 
-    .character-title {  
-        font-size: 32px;
-    }
-    .des {
-        margin-top: 16px;
-    }
-   .character-block {
-      display: flex;
-      justify-content: space-around;
-
-      .character-feature {
-        width: 22%;
+    .character-block {
+        margin-top: $short-margin;
         list-style: none;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
 
-        .character-name {
-            margin: 16px 0;
-            color: #56C4C5;
-            font-weight: bold;
+        .character-feature {
+            margin: 0 8px;
+            overflow: auto;
+            width: 22%;
+            // flex-grow: 1;
+            @extend .card;
         }
-        .character-para {
-            margin: 0 16px 16px 0;
-        }
-
         .character-icon {
             width: 100%;
-            border-radius: 12px 12px 0px 0px;
-          };
-      }
-    
-   }
-
-
+        }
+        .character-name {
+            margin-top: $mobile-shorter-margin;
+            font-weight: $font-weight-emphasize;
+            color: $secondary-color;
+            font-size: 1rem;
+        }
+        .character-para {
+            margin: $mobile-shorter-margin 0;
+            font-size: 1rem;
+        }
+    }
 }
-
-
-// .character {
-//     margin-top: $long-margin;
-//     text-align: center;
-
-//     .character-block {
-//         margin-top: $short-margin;
-//         list-style: none;
-//         display: flex;
-//         justify-content: center;
-//         flex-wrap: wrap;
-
-//         .character-feature {
-//             margin: 0 8px;
-//             overflow: auto;
-//             width: 22%;
-//             // flex-grow: 1;
-//             @extend .card;
-//         }
-//         .character-icon {
-//             width: 100%;
-//         }
-//         .character-name {
-//             margin-top: $mobile-shorter-margin;
-//             font-weight: $font-weight-emphasize;
-//             color: $secondary-color;
-//             font-size: 1rem;
-//         }
-//         .character-para {
-//             margin: $mobile-shorter-margin 0;
-//             font-size: 1rem;
-//         }
-//     }
-// }
 .solution {
     margin-top: $long-margin;
     display: flex;
@@ -487,6 +442,10 @@ body {
     .container {
         margin: 0 5%;
     } 
+    .bg {
+        background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home_sm.svg');
+        background-position: 10%;
+    }
     .nav {
         background-color: white;
         border-bottom: 1px solid yellow;

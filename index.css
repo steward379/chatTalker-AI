@@ -36,7 +36,7 @@ body .btn:hover {
   cursor: pointer;
 }
 
-body .card, body .solution .solution-block .solution-feature, .solution .solution-block body .solution-feature {
+body .card, body .character .character-block .character-feature, .character .character-block body .character-feature, body .solution .solution-block .solution-feature, .solution .solution-block body .solution-feature {
   box-shadow: 0px 2px 10px #dad8d8;
   -ms-border-radius: 12px;
   -moz-border-radius: 12px;
@@ -138,46 +138,37 @@ body .card, body .solution .solution-block .solution-feature, .solution .solutio
 
 .character {
   margin-top: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.character .character-title {
-  font-size: 32px;
-}
-
-.character .des {
-  margin-top: 16px;
-}
-
-.character .character-block {
-  display: flex;
-  justify-content: space-around;
-}
-
-.character .character-block .character-feature {
-  width: 22%;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
 }
 
-.character .character-block .character-feature .character-name {
-  margin: 16px 0;
-  color: #56C4C5;
-  font-weight: bold;
+.character .character-block {
+  margin-top: 48px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.character .character-block .character-feature .character-para {
-  margin: 0 16px 16px 0;
+.character .character-block .character-feature {
+  margin: 0 8px;
+  overflow: auto;
+  width: 22%;
 }
 
-.character .character-block .character-feature .character-icon {
+.character .character-block .character-icon {
   width: 100%;
-  border-radius: 12px 12px 0px 0px;
+}
+
+.character .character-block .character-name {
+  margin-top: 24px;
+  font-weight: 500;
+  color: #56C4C5;
+  font-size: 1rem;
+}
+
+.character .character-block .character-para {
+  margin: 24px 0;
+  font-size: 1rem;
 }
 
 .solution {
@@ -438,6 +429,10 @@ body .card, body .solution .solution-block .solution-feature, .solution .solutio
 @media screen and (max-width: 768px) {
   .container {
     margin: 0 5%;
+  }
+  .bg {
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home_sm.svg");
+    background-position: 10%;
   }
   .nav {
     background-color: white;
