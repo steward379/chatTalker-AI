@@ -56,24 +56,24 @@ body .card, body .character .character-block .character-feature, .character .cha
 }
 
 .ball_1 {
-  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball03.svg");
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball01.svg");
   background-repeat: no-repeat;
-  background-position: -25% 50%;
+  background-position: -230px 620px;
   background-size: 360px;
 }
 
 .ball_2 {
-  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball03.svg");
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball02.svg");
   background-repeat: no-repeat;
-  background-position: -25% 50%;
+  background-position: 85vw 45%;
   background-size: 360px;
 }
 
 .ball_3 {
   background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball03.svg");
   background-repeat: no-repeat;
-  background-position: -25% 50%;
-  background-size: 360px;
+  background-position: 50px 71%;
+  background-size: 150px;
 }
 
 .nav {
@@ -174,6 +174,7 @@ body .card, body .character .character-block .character-feature, .character .cha
   margin: 0 8px;
   overflow: auto;
   width: 22%;
+  background: white;
 }
 
 .character .character-block .character-icon {

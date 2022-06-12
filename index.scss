@@ -82,22 +82,22 @@ body {
 }
 
 .ball_1 {
-    background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball03.svg');
+    background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball01.svg');
     background-repeat: no-repeat;
-    background-position: -25% 50%;
+    background-position: -230px 620px;
     background-size: 360px;
 }
 .ball_2 {
-    background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball03.svg');
+    background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball02.svg');
     background-repeat: no-repeat;
-    background-position: -25% 50%;
+    background-position: 85vw 45%;
     background-size: 360px;
 }
 .ball_3 {
     background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball03.svg');
     background-repeat: no-repeat;
-    background-position: -25% 50%;
-    background-size: 360px;
+    background-position: 50px 71%;
+    background-size: 150px;
 }
 
 .nav {
@@ -185,6 +185,7 @@ body {
             margin: 0 8px;
             overflow: auto;
             width: 22%;
+            background: white;
             // flex-grow: 1;
             @extend .card;
         }
@@ -220,7 +221,7 @@ body {
             margin: 14px 23.5px;
             padding: 32px;
             width: 230px;
-            height: 280px;
+            height: 280px;       
             @extend .card;
         }
         .solution-icon-shadow {
@@ -300,6 +301,7 @@ body {
             list-style: none;
             padding: 0 32px 32px 32px;
             height: 100%;
+            background-color: white;
         }
         .rating-profile {
             position: relative;
