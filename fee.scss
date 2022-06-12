@@ -1,0 +1,269 @@
+@import "index2.scss";
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin btnFee(){
+    margin: 48px 8px;
+    width: 130px;
+    height: 50px;
+    border-radius:27px;
+    color: $secondary-color;
+    background: none;
+    border: $secondary-color 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+        background: $secondary-color;
+        color: white;
+        cursor: pointer;
+    }
+    &:active {
+        background: none;
+        color: $secondary-color;   
+    }
+}
+
+
+.bg {
+    background-color: rgb(248, 244, 244);
+    border-radius: 0 0 0 300px;
+    height: 470px;
+    width: 100%;
+}
+.amp {
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/banner.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+.ball {
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball03.svg);
+    background-repeat: no-repeat;
+    background-position: -25% 50%;
+    background-size: 360px;
+}
+.jumbotron {
+    height: 470px;
+
+    .banner-para {
+        flex: 1;
+    }
+}
+
+.fee {
+    // margin-top: $long-margin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .fee-count {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .fee-count-option {
+            @include btnFee();
+        }
+    } 
+
+    .fee-block {
+        margin-top: $short-margin;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 70%;
+
+        .fee-feature {
+            background-color: white;
+            margin: 0 10px;
+            overflow: auto;
+            flex: 1;
+            @extend .card;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .btn-now {
+                @include btnFee();
+                margin-top: -12px;
+    
+                color: white;
+                background: $secondary-color;
+    
+                &:hover {
+                    background: none;
+                    color: $secondary-color;
+                    cursor: pointer;
+                }
+                &:active {
+                    background: $secondary-color;
+                    color: white;   
+                }
+                
+            }
+        }
+        .fee-name {
+            margin-top: 16px;
+            font-weight: $font-weight-bold;
+            color: $primary-color;
+            font-size: 1.5rem;
+        }
+        .fee-line {
+            margin: 16px 0 32px 0;
+            border: 1px solid #DDDDDD;
+        }
+        .fee-para {
+            margin: $mobile-shorter-margin 0;
+            font-size: 1rem;
+        }
+        .fee-equal {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .fee-square {
+                width: 169px;
+                height: 108px;
+                background: #F5F5F5;
+                border-radius: 12px;
+                padding: 16px 28px;
+                .fee-emphasize {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .fee-emphasize-blue {
+                    .fee-num {color: #56C4C5;}
+                    .fee-count{color: #56C4C5};
+                }
+                .fee-num {
+                    font-size: 32px;
+                    margin-right: 4px;
+                }
+                .fee-count {
+                    font-size: 12px;
+                    font-weight: 700;
+                    margin-left: 4px;
+                }
+            }
+            .fee-equal-mid {
+                font-size: 40px;
+                margin: 0 6px;
+            }
+        }
+        .fee-check {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 36px 24px;
+
+            .fee-check-span {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                div {margin: 4px;}
+            }
+        }
+    }
+}
+.qa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .qa-title {
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 48px;
+    }
+    .qa-box {
+        width: 70%;
+        max-width: 800px;
+    }
+    .qa-box-sq {
+        display: flex;
+        justify-content: space-between;
+        padding: 16px 32px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .amp {
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/banner_sm.svg);
+        background-position: top;
+        background-size: contain;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .fee-block {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:992px) { 
+    .character {
+        .character-block .character-feature {
+            width: 44%;
+        }
+    }
+    .ratings {
+        .ratings-ul {
+            width: 70%;
+        }
+        .rating-user {
+            margin-bottom: 60px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        margin: 0 5%;
+    } 
+    .nav .logo {
+        height: 24px;
+    }
+    .jumbotron {
+        flex-direction: column;
+
+        .banner-para {
+            .big-title {
+                font-size: $title-size;
+            }
+            .sub-title {
+                margin-top: $mobile-short-margin;
+            }
+        }
+        .home-banner {
+            height: auto;
+            width: 100%;
+            margin-top: $mobile-short-margin;
+        }
+    }
+    .character .character-block .character-feature {
+        width: 100%;
+    } 
+    .ratings .ratings-ul {
+        width: 100%;
+
+        .user2, .user3 {
+            display: none;
+        }
+    }
+    .cta .hair {
+        margin-top: -200px;
+        background-image: url($footer-image-sm);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}

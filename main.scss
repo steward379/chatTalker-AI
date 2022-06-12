@@ -1,0 +1,100 @@
+$font-stack: Noto Sans TC, sans-serif;
+$primary-color: #221E1F;
+$secondary-color: #56C4C5;
+$emphasize-color: #FF5D50;
+$footer-color: #F5F5F5;
+$font-weight-normal: 400;
+$font-weight-emphasize: 500;
+$font-size-normal: 16px;
+$title-size: 2rem;
+$description-size: 1.25rem;
+$sub-des-size: 1.125rem;
+$long-margin: 100px;
+$short-margin: 48px;
+$mobile-long-margin: 60px;
+$mobile-short-margin: 32px;
+$mobile-margin-btm: 24px;
+$mobile-shorter-margin: 24px;
+// $footer-image: 'https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/home_footer.svg';
+
+*, *:before, *:after {
+        /* outline: 1px black solid; */
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: $font-stack;
+    color: $primary-color;
+    font-weight: $font-weight-normal;
+    font-size: $font-size-normal;
+    font-family: $font-stack;
+}
+body {
+    .title {
+        font-size: $title-size;
+        font-weight: $font-weight-emphasize;
+    }
+    .des {
+        margin-top: 16px;
+        font-size: $description-size;
+    }
+    .btn {
+        width: 8rem;
+        border-radius:22px;
+        border : none;
+        color: white;
+        height: 40px;
+    }
+    @mixin css3-border-radius() { 
+        -ms-border-radius: 12px;
+        -moz-border-radius: 12px; 
+        -webkit-border-radius: 12px; 
+        -o-border-radius: 12px; 
+        border-radius: 12px; 
+      }
+    .card {
+        box-shadow: 0px 2px 10px rgb(218, 216, 216);
+        @include css3-border-radius;
+    }
+}
+.container {
+    margin: 0 10%;
+}
+.nav {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+
+    .logo {
+        height: 40px;
+    }
+    .btn-top {
+        background-color: $emphasize-color;
+    }
+}
+.reserved {
+    text-align: center;
+    margin-top: $long-margin;
+    width: 100%;
+    padding: 16px 0;
+    background: $footer-color;
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        margin: 0 7%;
+    }
+    .reserved {
+        margin-top: $mobile-long-margin;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        margin: 0 5%;
+    } 
+    .nav .logo {
+        height: 24px;
+    }
+}
