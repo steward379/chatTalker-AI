@@ -49,8 +49,10 @@ body .card, body .solution .solution-block .solution-feature, .solution .solutio
   margin: 0 7%;
 }
 
-.nope {
-  display: none;
+.bg {
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home.svg");
+  background-position: right top;
+  background-repeat: no-repeat;
 }
 
 .nav {
