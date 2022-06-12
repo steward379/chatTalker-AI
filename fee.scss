@@ -28,19 +28,19 @@ body {
 }
 
 
-.bg {
+.bg-fee {
     background-color: rgb(248, 244, 244);
     border-radius: 0 0 0 300px;
     height: 470px;
     width: 100%;
 }
 .amp {
-    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/banner.svg);
+    background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/banner.svg');
     background-repeat: no-repeat;
     background-position: right top;
 }
 .ball {
-    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball03.svg);
+    background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball03.svg');
     background-repeat: no-repeat;
     background-position: -25% 50%;
     background-size: 360px;

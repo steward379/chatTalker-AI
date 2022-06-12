@@ -55,6 +55,27 @@ body .card, body .character .character-block .character-feature, .character .cha
   background-repeat: no-repeat;
 }
 
+.ball_1 {
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball03.svg");
+  background-repeat: no-repeat;
+  background-position: -25% 50%;
+  background-size: 360px;
+}
+
+.ball_2 {
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball03.svg");
+  background-repeat: no-repeat;
+  background-position: -25% 50%;
+  background-size: 360px;
+}
+
+.ball_3 {
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball03.svg");
+  background-repeat: no-repeat;
+  background-position: -25% 50%;
+  background-size: 360px;
+}
+
 .nav {
   padding: 10px 7%;
   padding-top: 20px;

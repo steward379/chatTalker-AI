@@ -49,6 +49,33 @@ body .card, body .character .character-block .character-feature, .character .cha
   margin: 0 7%;
 }
 
+.bg {
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home.svg");
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+
+.ball_1 {
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball03.svg");
+  background-repeat: no-repeat;
+  background-position: -25% 50%;
+  background-size: 360px;
+}
+
+.ball_2 {
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball03.svg");
+  background-repeat: no-repeat;
+  background-position: -25% 50%;
+  background-size: 360px;
+}
+
+.ball_3 {
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball03.svg");
+  background-repeat: no-repeat;
+  background-position: -25% 50%;
+  background-size: 360px;
+}
+
 .nav {
   padding: 10px 7%;
   padding-top: 20px;
@@ -243,6 +270,7 @@ body .card, body .character .character-block .character-feature, .character .cha
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 100px;
 }
 
 .ratings .ratings-title {
@@ -252,38 +280,46 @@ body .card, body .character .character-block .character-feature, .character .cha
   font-weight: 500;
 }
 
-.ratings .ratings-ul {
+.ratings .swiper2 {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+.ratings .swiper-wrapper2 {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.ratings .rating-user {
-  list-style: none;
-  margin: 8px 24px;
-  padding: 0 32px 32px 32px;
+.ratings .swiper-wrapper2 .swiper-slide2 {
   flex: 1;
+  margin: 8px 24px;
+  list-style: none;
+  padding: 0 32px 32px 32px;
+  height: 100%;
 }
 
-.ratings .rating-profile {
+.ratings .swiper-wrapper2 .rating-profile {
   position: relative;
   top: -48px;
   width: 80px;
   border-radius: 100%;
 }
 
-.ratings .rating-line {
+.ratings .swiper-wrapper2 .rating-line {
   margin: 20px 0;
   border: 1px solid #DDDDDD;
 }
 
-.ratings .rating-com {
+.ratings .swiper-wrapper2 .rating-com {
   font-weight: 500;
   margin-bottom: 8px;
 }
 
-.ratings .rating-star-area {
+.ratings .swiper-wrapper2 .rating-star-area {
   display: flex;
   justify-content: space-between;
 }
@@ -387,15 +423,8 @@ body .card, body .character .character-block .character-feature, .character .cha
   .ratings {
     margin-top: 60px;
   }
-  .ratings .ratings-title {
-    margin-bottom: 88px;
-  }
-  .ratings .ratings-ul {
-    flex-direction: column;
-    width: 70%;
-  }
-  .ratings .rating-pages {
-    margin-bottom: 60px;
+  .ratings .swiper2 .swiper-wrapper2 .swiper-slide2 {
+    margin-bottom: 50px;
   }
   .cta .hair .cta-title {
     font-size: 24px;
@@ -410,10 +439,10 @@ body .card, body .character .character-block .character-feature, .character .cha
   .character .character-block .character-feature {
     width: 44%;
   }
-  .ratings .ratings-ul {
+  .swiper2 .swiper-wrapper2 {
     width: 70%;
   }
-  .ratings .rating-user {
+  .swiper2 .swiper-wrapper2 .swiper-slide2 {
     margin-bottom: 60px;
   }
 }
@@ -421,6 +450,11 @@ body .card, body .character .character-block .character-feature, .character .cha
 @media screen and (max-width: 768px) {
   .container {
     margin: 0 5%;
+  }
+  .bg {
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home_sm.svg");
+    background-position: 50% 400px;
+    background-repeat: no-repeat;
   }
   .nav {
     background-color: white;
@@ -446,8 +480,13 @@ body .card, body .character .character-block .character-feature, .character .cha
   .character .character-block .character-feature {
     width: 100%;
   }
-  .ratings .ratings-ul {
+  .swiper2 .swiper-wrapper2 {
+    flex-direction: column;
     width: 100%;
+  }
+  .swiper2 .swiper-wrapper2 .swiper-slide2 {
+    margin-bottom: 50px;
+    padding-bottom: 30px;
   }
   .cta .hair {
     margin-top: -200px;
@@ -458,38 +497,21 @@ body .card, body .character .character-block .character-feature, .character .cha
   }
 }
 
-.swiper {
-  border: 3px black solid;
-  width: 300px;
-  height: 300px;
+.swiper-pagination {
+  position: static;
+  margin-top: 24px;
 }
 
-.swiper-wrapper {
-  width: 300px;
-  border: 1px red solid;
+.swiper-pagination .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: #DDDDDD;
 }
 
-.swiper-slide {
-  width: 100px;
-  height: 100px;
-  background: darkblue;
-  border: 1px white solid;
-  color: white;
-}
-
-.b {
-  background: red;
-}
-
-.c {
-  background: black;
-}
-
-.swiper-scrollbar {
-  width: 300px;
-  height: 10px;
-  background: red;
-  cursor: pointer;
+.swiper-pagination .swiper-pagination-bullet-active {
+  width: 20px;
+  border-radius: 8px;
 }
 
 body {
@@ -497,7 +519,7 @@ body {
   padding: 0;
 }
 
-.bg {
+.bg-fee {
   background-color: #f8f4f4;
   border-radius: 0 0 0 300px;
   height: 470px;
@@ -505,13 +527,13 @@ body {
 }
 
 .amp {
-  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/banner.svg);
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/banner.svg");
   background-repeat: no-repeat;
   background-position: right top;
 }
 
 .ball {
-  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball03.svg);
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball03.svg");
   background-repeat: no-repeat;
   background-position: -25% 50%;
   background-size: 360px;
