@@ -432,7 +432,8 @@ body .card, body .character .character-block .character-feature, .character .cha
   }
   .bg {
     background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home_sm.svg");
-    background-position: 10%;
+    background-position: 50% 400px;
+    background-repeat: no-repeat;
   }
   .nav {
     background-color: white;
