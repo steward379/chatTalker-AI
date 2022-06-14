@@ -274,6 +274,7 @@ body .card, body .character .character-block .character-feature, .character .cha
 .swiper {
   margin-bottom: 100px;
   height: 400px;
+  padding: 0 30px;
 }
 
 .swiper .swiper-wrapper {
