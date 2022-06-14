@@ -312,6 +312,32 @@ body {
         }
 
     }
+    .swiper-bottom-prev {
+        top: 100px;
+        left: 0px;
+    }
+    .swiper-button-next, .swiper-button-prev {
+        position: absolute;
+        // right: 10%;
+        top: 90%;
+        width: calc(var(--swiper-navigation-size)/20);
+        height: calc(var(--swiper-navigation-size)) ;
+        margin-top: calc(15px - (var(--swiper-navigation-size)));
+        color: red;
+    }
+
+    .swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
+        position: absolute;
+        // left: 1%;
+        bottom: 3px;
+        z-index: 50;
+        height: 3px;
+        width: 100%;
+        border-radius: 3px;
+        background: #56C4C5;
+        opacity: 0.5;
+    }
+
     .swiper-pagination {
 
         .swiper-pagination-bullet {
