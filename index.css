@@ -1,5 +1,4 @@
 *, *:before, *:after {
-  /* outline: 1px black solid; */
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -265,12 +264,68 @@ body .card, body .character .character-block .character-feature, .character .cha
   color: #56C4C5;
 }
 
-.ratings {
-  margin-top: 100px;
+.ratings-title {
+  margin-bottom: 104px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.swiper {
+  margin-bottom: 100px;
+  height: 400px;
+}
+
+.swiper .swiper-wrapper {
+  height: 300px;
+}
+
+.swiper .swiper-wrapper .swiper-slide {
+  padding: 0 32px 32px 32px;
+  background-color: white;
+  margin-top: 48px;
+  width: calc(100%-80px);
+}
+
+.swiper .swiper-wrapper .swiper-slide .rating-profile {
+  position: relative;
+  top: -48px;
+  left: 40%;
+  width: 80px;
+  border-radius: 100%;
+}
+
+.swiper .swiper-wrapper .swiper-slide .rating-line {
+  margin: 20px 0;
+  border: 1px solid #DDDDDD;
+}
+
+.swiper .swiper-wrapper .swiper-slide .rating-com {
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.swiper .swiper-wrapper .swiper-slide .rating-star-area {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+}
+
+.swiper .swiper-pagination .swiper-pagination-bullet {
+  border-radius: 100%;
+  background: #DDDDDD;
+  width: 10px;
+  height: 10px;
+  margin: 0 4px;
+}
+
+.swiper .swiper-pagination .swiper-pagination-bullet-active {
+  background: #FFD153;
+  width: 16px;
+}
+
+.ratings {
+  display: none;
+  margin-top: 100px;
   margin-bottom: 100px;
 }
 
@@ -279,6 +334,28 @@ body .card, body .character .character-block .character-feature, .character .cha
   text-align: center;
   font-size: 2rem;
   font-weight: 500;
+}
+
+.ratings .rating-profile {
+  position: relative;
+  top: -48px;
+  width: 80px;
+  border-radius: 100%;
+}
+
+.ratings .rating-line {
+  margin: 20px 0;
+  border: 1px solid #DDDDDD;
+}
+
+.ratings .rating-com {
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.ratings .rating-star-area {
+  display: flex;
+  justify-content: space-between;
 }
 
 .ratings .swiper2 {
@@ -302,48 +379,6 @@ body .card, body .character .character-block .character-feature, .character .cha
   padding: 0 32px 32px 32px;
   height: 100%;
   background-color: white;
-}
-
-.ratings .swiper-wrapper2 .rating-profile {
-  position: relative;
-  top: -48px;
-  width: 80px;
-  border-radius: 100%;
-}
-
-.ratings .swiper-wrapper2 .rating-line {
-  margin: 20px 0;
-  border: 1px solid #DDDDDD;
-}
-
-.ratings .swiper-wrapper2 .rating-com {
-  font-weight: 500;
-  margin-bottom: 8px;
-}
-
-.ratings .swiper-wrapper2 .rating-star-area {
-  display: flex;
-  justify-content: space-between;
-}
-
-.ratings .rating-pages {
-  margin-top: 24px;
-  margin-bottom: 100px;
-  display: flex;
-  justify-content: center;
-}
-
-.ratings .rating-pages .rating-page {
-  border-radius: 100%;
-  background: #DDDDDD;
-  width: 10px;
-  height: 10px;
-  margin: 0 4px;
-}
-
-.ratings .rating-pages .rating-page-y {
-  background: #FFD153;
-  width: 16px;
 }
 
 .cta {
@@ -497,21 +532,4 @@ body .card, body .character .character-block .character-feature, .character .cha
     background-size: contain;
     background-repeat: no-repeat;
   }
-}
-
-.swiper-pagination {
-  position: static;
-  margin-top: 24px;
-}
-
-.swiper-pagination .swiper-pagination-bullet {
-  width: 8px;
-  height: 8px;
-  border-radius: 100%;
-  background-color: #DDDDDD;
-}
-
-.swiper-pagination .swiper-pagination-bullet-active {
-  width: 20px;
-  border-radius: 8px;
 }

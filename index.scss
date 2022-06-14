@@ -20,7 +20,7 @@ $footer-image: 'https://raw.githubusercontent.com/hexschool/webLayoutTraining1st
 $footer-image-sm: 'https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/footer_sm.svg';
 
 *, *:before, *:after {
-        /* outline: 1px black solid; */
+    // outline: 1px black solid;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -268,12 +268,74 @@ body {
         }
     }
 }
+
+.ratings-title {
+    margin-bottom: 104px;
+    text-align: center;
+    font-size: $title-size;
+    font-weight: 500;
+}
+
+.swiper {
+    margin-bottom: 100px;
+    height: 400px;
+
+    .swiper-wrapper {
+        height: 300px;
+
+        .swiper-slide {
+            padding: 0 32px 32px 32px;
+            background-color: white;
+            margin-top: 48px;
+            width: calc(100%-80px);
+
+            .rating-profile {
+                position: relative;
+                top: -48px;
+                left: 40%;
+                width: 80px;
+                border-radius: 100%;
+            }
+            .rating-line {
+                margin: 20px 0;
+                border: 1px solid #DDDDDD;
+            }
+            .rating-com {
+                font-weight: 500;
+                margin-bottom: 8px;
+            }
+            .rating-star-area {
+                display: flex;
+                justify-content: space-between;
+            }
+            
+        }
+
+    }
+    .swiper-pagination {
+
+        .swiper-pagination-bullet {
+            border-radius: 100%;
+            background: #DDDDDD;
+            width: 10px;
+            height: 10px;
+            margin: 0 4px;    
+        }
+        .swiper-pagination-bullet-active {
+            background: #FFD153;
+            width: 16px;
+        }
+    }
+}
+
+
 .ratings {
+    display: none;
     margin-top: $long-margin;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
     margin-bottom: 100px;
 
     .ratings-title {
@@ -282,6 +344,26 @@ body {
         font-size: $title-size;
         font-weight: 500;
     }
+
+    .rating-profile {
+        position: relative;
+        top: -48px;
+        width: 80px;
+        border-radius: 100%;
+    }
+    .rating-line {
+        margin: 20px 0;
+        border: 1px solid #DDDDDD;
+    }
+    .rating-com {
+        font-weight: 500;
+        margin-bottom: 8px;
+    }
+    .rating-star-area {
+        display: flex;
+        justify-content: space-between;
+    }
+
     .swiper2 {
         display: flex;
         flex-direction: column;
@@ -303,43 +385,25 @@ body {
             height: 100%;
             background-color: white;
         }
-        .rating-profile {
-            position: relative;
-            top: -48px;
-            width: 80px;
-            border-radius: 100%;
-        }
-        .rating-line {
-            margin: 20px 0;
-            border: 1px solid #DDDDDD;
-        }
-        .rating-com {
-            font-weight: 500;
-            margin-bottom: 8px;
-        }
-        .rating-star-area {
-            display: flex;
-            justify-content: space-between;
-        }
     }
-    .rating-pages {
-        margin-top: $mobile-shorter-margin;
-        margin-bottom: 100px;
-        display: flex;
-        justify-content: center;
+    // .rating-pages {
+    //     margin-top: $mobile-shorter-margin;
+    //     margin-bottom: 100px;
+    //     display: flex;
+    //     justify-content: center;
 
-        .rating-page {
-            border-radius: 100%;
-            background: #DDDDDD;
-            width: 10px;
-            height: 10px;
-            margin: 0 4px;    
-        }
-        .rating-page-y {
-            background: #FFD153;
-            width: 16px;
-        }
-    }
+    //     .rating-page {
+    //         border-radius: 100%;
+    //         background: #DDDDDD;
+    //         width: 10px;
+    //         height: 10px;
+    //         margin: 0 4px;    
+    //     }
+    //     .rating-page-y {
+    //         background: #FFD153;
+    //         width: 16px;
+    //     }
+    // }
 }
 
 .cta {
@@ -513,18 +577,18 @@ body {
     }
 }
 
-  .swiper-pagination {
-    position: static;
-    margin-top: 24px;
+//   .swiper-pagination {
+//     position: static;
+//     margin-top: 24px;
 
-    .swiper-pagination-bullet {
-        width: 8px;
-        height: 8px;
-        border-radius: 100%;
-        background-color: #DDDDDD;
-    }
-    .swiper-pagination-bullet-active {
-        width: 20px;
-        border-radius: 8px;
-      }
-  }
+//     .swiper-pagination-bullet {
+//         width: 8px;
+//         height: 8px;
+//         border-radius: 100%;
+//         background-color: #DDDDDD;
+//     }
+//     .swiper-pagination-bullet-active {
+//         width: 20px;
+//         border-radius: 8px;
+//       }
+//   }
