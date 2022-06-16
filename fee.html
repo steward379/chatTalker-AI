@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <title>chatbot-fee</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper/swiper-bundle.min.css"
+/>
     <link href="./fee.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -104,21 +108,28 @@
                     <div class="qa">
                         <h2 class="title qa-title">常見問題</h2>
                         <ul class="qa-box">
-                            <li class="card qa-box-sq">
-                                <div>我要怎麼變更方案？</div>
-                                <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/icon_plus.svg" alt="plus">
+                            <li class="card qa-box-sq qa-box-1">
+                                <div class="qa-show-title"><h3>我要怎麼變更方案？</h3>
+                                    <p class="qa-para qa-hide-para"><br>點下去就可以了。</p>`
+                                </div>
+                                <img class="qa-show-1" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/icon_plus.svg" alt="plus">
+                                <img class="qa-hide-1" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/icon_minus.svg" alt="minus" />
                             </li>
-                            <li class="card qa-box-sq">
-                                <div>如果我沒有LINE官方帳號怎麼辦？</div>
-                                <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/icon_plus.svg" alt="plus">
+                            <li class="card qa-box-sq qa-box-2">
+                                <div><h3>如果我沒有LINE官方帳號怎麼辦？</h3>
+                                    <p class="qa-para qa-hide-para-2"><br>去辦一個。</p>`
+                                </div>
+                                <img class="qa-show-2" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/icon_plus.svg" alt="plus">
+                                <img class="qa-hide-2" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/icon_minus.svg" alt="minus" />
                             </li>
-                            <li class="card qa-box-sq qa-box-sq-open">
+                            <li class="card qa-box-sq qa-box-sq-open qa-box-3">
                                 <div><h3>非上班日有客服支援嗎？</h3>
-                                    <p>
+                                    <p class="qa-para qa-hide-para-3"><br>
                                         當然哦！我們錢都收了，不會拋棄你的！<br>請您直接來我們公司，我們假日也都在辦公室。
                                     </p>
                                 </div>
-                                <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/icon_minus.svg" alt="minus">
+                                <img class="qa-show-3" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/icon_plus.svg" alt="plus">
+                                <img class="qa-hide-3" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/icon_minus.svg" alt="minus" />
                             </li>
                         </ul>
                     </div>
@@ -131,6 +142,48 @@
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="fee.js"></script>
-    <script type="text/javascript" src="./index2.js"></script>
+    <script type="text/javascript" src="./index.js"></script>
+    <script>
+         $(".qa-hide-1").hide();
+         $(".qa-hide-2").hide();
+         $(".qa-hide-3").hide();
+         $(".qa-hide-para").hide();
+         $(".qa-hide-para-2").hide();
+         $(".qa-hide-para-3").hide();
+
+        $(".qa-show-1").on("click",() => {
+            $(".qa-hide-1").show();
+            $(".qa-show-1").hide();
+            $(".qa-hide-para").slideDown();
+            // $(".qa-show-title").append(`<p class="qa-hide-para"><br>點下去就可以了。</p>`);
+            // $(".qa-box-1").append(`<img class="qa-hide-1" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/icon_minus.svg" alt="minus-1" />`);
+        });
+        $(".qa-hide-1").on("click",() => {
+            $(".qa-hide-1").hide();
+            $(".qa-show-1").show();
+            $(".qa-hide-para").slideUp();
+        });
+        $(".qa-show-2").on("click",() => {
+            $(".qa-show-2").hide();
+            $(".qa-hide-2").show();
+            $(".qa-hide-para-2").slideDown();
+        });
+        $(".qa-hide-2").on("click",() => {
+            $(".qa-hide-2").hide();
+            $(".qa-show-2").show();
+            $(".qa-hide-para-2").slideUp();
+        });
+        $(".qa-show-3").on("click",() => {
+            $(".qa-show-3").hide();
+            $(".qa-hide-3").show();
+            $(".qa-hide-para-3").slideDown();
+        });
+        $(".qa-hide-3").on("click",() => {
+            $(".qa-hide-3").hide();
+            $(".qa-show-3").show();
+            $(".qa-hide-para-3").slideUp();
+        });
+    </script>
 </body>

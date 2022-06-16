@@ -81,6 +81,7 @@ body {
         .fee-feature {
             background-color: white;
             margin: 0 10px;
+            padding: 0 30px;
             overflow: auto;
             flex: 1;
             @extend .card;
@@ -193,6 +194,10 @@ body {
         justify-content: space-between;
         padding: 16px 32px;
     }
+    .qa-para {
+        color: $secondary-color;
+        font-weight: bold;
+    } 
 }
 
 @media screen and (max-width: 768px) {
